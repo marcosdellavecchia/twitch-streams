@@ -8,8 +8,8 @@ const topLanguage = [];
 const clientID = config.clientID;
 const authKey = config.authKey;
 
-//Preloader
-let loader = `<div id='loader'>Fetching streams...</div>`;
+//Agrega preloader
+let loader = `<div id='loader'>Loading...</div>`;
 list.innerHTML = loader;
 
 //Petición a la API con Axios
