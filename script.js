@@ -22,17 +22,18 @@ axios
         topTitles.push(id.title);
         topViewers.push(id.viewer_count);
 
-        //Muestra la lista en el DOM
-        function displayList() {
+        //Función que muestra la lista en el DOM
+        displayList = () => {
           list.innerHTML +=
             "<li>" +
             topStreamers[topStreamers.length - 1] +
-            " - " +
+            "</br> </br>" +
             topTitles[topTitles.length - 1] +
-            " - Viewers: " +
+            "</br> </br>" +
+            "Viewers: " +
             topViewers[topViewers.length - 1] +
             "</li>";
-        }
+        };
         displayList();
       });
     },
