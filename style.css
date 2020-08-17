@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111111;
+  color: #fafafa;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
+}
+
+.title h1 {
+  font-size: 25px;
+  margin: 15px;
+}
+
+.trophy {
+  font-size: 40px;
+}
+
+li {
+  list-style-type: none;
+  text-align: left;
+  margin: 8px;
+  font-size: 14px;
+}
