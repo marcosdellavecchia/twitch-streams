@@ -27,12 +27,16 @@ axios
           list.innerHTML +=
             "<li>" +
             topStreamers[topStreamers.length - 1] +
-            "</br> </br>" +
+            "</br>" +
+            "<span style=color:yellow>" +
             topTitles[topTitles.length - 1] +
-            "</br> </br>" +
+            "</span>" +
+            "</br>" +
+            "<span style=color:lightblue>" +
             " (" +
             topViewers[topViewers.length - 1] +
             " viewers)" +
+            "</span>" +
             "</li>";
         };
         displayList();

@@ -7,7 +7,7 @@
 body {
   background-color: #111111;
   color: #fafafa;
-  font-family: "Press Start 2P", cursive;
+  font-family: "VT323", monospace;
 }
 
 .container {
@@ -22,12 +22,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Press Start 2P", cursive;
   margin: 25px;
 }
 
 .title h1 {
-  font-size: 25px;
-  margin: 15px;
+  text-align: center;
+  color: #6441a4;
+  font-size: 30px;
+  margin: 10px;
 }
 
 .trophy {
@@ -37,6 +40,47 @@ body {
 li {
   list-style-type: none;
   text-align: center;
-  margin: 38px;
-  font-size: 14px;
+  margin: 30px;
+  font-size: 24px;
+}
+
+.footer {
+  width: 50%;
+}
+
+.footer a {
+  text-align: center;
+  text-decoration: none;
+  font-family: "Press Start 2P", cursive;
+  color: #fafafa;
+  font-size: 10px;
+  margin: 15px;
+}
+
+.heart {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 480px) {
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .trophy {
+    font-size: 40px;
+  }
+
+  .footer {
+    width: 80%;
+  }
+  .footer a {
+    font-size: 9px;
+  }
+  .heart {
+    font-size: 14px;
+  }
 }
