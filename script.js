@@ -7,6 +7,7 @@ const topViewers = [];
 const clientID = config.clientID;
 const authKey = config.authKey;
 
+//Petición a la API con Axios
 axios
   .get("https://api.twitch.tv/helix/streams", {
     headers: {
