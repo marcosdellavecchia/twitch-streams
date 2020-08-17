@@ -8,6 +8,10 @@ const topLanguage = [];
 const clientID = config.clientID;
 const authKey = config.authKey;
 
+//Preloader
+let loader = `<div id='loader'>Fetching streams...</div>`;
+list.innerHTML = loader;
+
 //Petición a la API con Axios
 axios
   .get("https://api.twitch.tv/helix/streams", {
@@ -50,6 +54,9 @@ axios
         };
         displayList();
       });
+
+      //Elimina preloader una vez recibidos los datos de la API
+      document.getElementById("loader").remove();
     },
     (err) => {
       console.log(err);
