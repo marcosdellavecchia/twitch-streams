@@ -3,18 +3,21 @@ const topStreamers = [];
 const topTitles = [];
 const topViewers = [];
 
+//ID y Clave para la API
+const clientID = config.clientID;
+const authKey = config.authKey;
+
 axios
   .get("https://api.twitch.tv/helix/streams", {
     headers: {
-      "Client-ID": "4fy281ji608puh2rl2z76lr1y7131j",
-      Authorization: "Bearer 82ljz4sisz17xxt3re8g5y6t16js4v",
+      "Client-ID": clientID,
+      Authorization: authKey,
     },
   })
   .then(
     (res) => {
       //Guarda la informacion en la constante streams
       const streams = res.data.data;
-      console.log(streams);
 
       //Mapea streams y guarda los datos correspondientes en distintos arrays
       streams.map((id) => {
@@ -46,6 +49,3 @@ axios
       console.log(err);
     }
   );
-
-console.log("top streamers are", topStreamers);
-console.log("top titles are", topTitles);
