@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", monospace;
   margin: 25px;
 }
 
@@ -51,7 +51,7 @@ li {
 .footer a {
   text-align: center;
   text-decoration: none;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", monospace;
   color: #fafafa;
   font-size: 10px;
   margin: 15px;
