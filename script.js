@@ -30,8 +30,9 @@ axios
             "</br> </br>" +
             topTitles[topTitles.length - 1] +
             "</br> </br>" +
-            "Viewers: " +
+            " (" +
             topViewers[topViewers.length - 1] +
+            " viewers)" +
             "</li>";
         };
         displayList();
