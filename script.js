@@ -97,6 +97,12 @@ displayFlags = () => {
       case "fr":
         topLanguage[i] = "<span class='flag-icons FR'></span>";
         break;
+      case "tr":
+        topLanguage[i] = "<span class='flag-icons TR'></span>";
+        break;
+      case "pl":
+        topLanguage[i] = "<span class='flag-icons PL'></span>";
+        break;
     }
   }
 };
