@@ -6,7 +6,7 @@ Information:
 
 - Streamer username
 - Current stream name
-- Current stream language
+- Flag representing stream language
 - Viewers count
 
 Flag icons: https://yammadev.github.io/flag-icons/ (by https://github.com/yammadev)
