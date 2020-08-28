@@ -36,6 +36,9 @@ axios
         displayList = () => {
           displayFlags();
           list.innerHTML +=
+            "<a href=https://twitch.tv/" +
+            topStreamers[topStreamers.length - 1] +
+            ">" +
             "<li>" +
             topLanguage[topLanguage.length - 1] +
             " " +
@@ -50,7 +53,8 @@ axios
             topViewers[topViewers.length - 1] +
             " viewers)" +
             "</span>" +
-            "</li>";
+            "</li>" +
+            "</a>";
         };
         displayList();
       });
